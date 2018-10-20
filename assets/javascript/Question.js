@@ -1,6 +1,6 @@
 class Question {
-    constructor(question, choices, answer, image) {
-        this.question = question;
+    constructor(statement, choices, answer, image) {
+        this.statement = statement;
         this.choices = choices;
         this.answer = answer;
         this.image = image;
