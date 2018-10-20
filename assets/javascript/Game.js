@@ -13,7 +13,7 @@ class Game {
      */
     createQuestions() {
         return [new Question(
-            'Who wrote "The Wind-Up Bird Chronicle?',
+            'Who wrote "The Wind-Up Bird Chronicle"?',
             ['Kurt Vonnegut', 'Octavia Butler', 'Haruki Murakami', 'R.L. Stine'],
             'Haruki Murakami',
             'murakami.jpg'),
@@ -34,11 +34,11 @@ class Game {
      * @param {Object} question - Question to display
      */
     displayQuestion(question) {
-        let questionHeading = $("<h1>").text(question.statement);
+        let questionHeading = $("<h2>").text(question.statement);
         let choiceList = $("<ul>").addClass("choice-list");
 
         for (let choice of question.choices) {
-            let choiceListElement = $("<li>").addClass("choice");
+            let choiceListElement = $("<li>").addClass("choice button");
             choiceListElement.text(choice);
             choiceList.append(choiceListElement);
         }
@@ -69,7 +69,7 @@ class Game {
         }
 
         let resultText = $("<h2>").text(message);
-        let correctAnswer = $("<h2>").text(`The correct answer was: ${question.answer}`);
+        let correctAnswer = $("<p>").text(`The correct answer was: ${question.answer}`);
         let resultImage = $("<img>").attr("src", `assets/images/${question.image}`);
 
         $("#question-results-area").append(resultText);

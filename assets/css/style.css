@@ -1,7 +1,61 @@
+html {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.05em;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+    margin-bottom: 0.25em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+header {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game-area {
+    background-image: url("../images/pagetexture.jpg");
+    border-radius: 10px;
+    width: 80%;
+    height: 80vh;
+}
+
+.button {
+    padding: 1em;
+}
+
 #choice-list {
     list-style: none;
 }
 
 #question-results-area img {
-    height: 300px;
+    height: 200px;
 }
