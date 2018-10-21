@@ -8,11 +8,7 @@ body {
 }
 
 h1,
-h2 {
-    font-family: 'Playfair Display SC', serif;
-}
-
-h1 {
+#start {
     font-size: 3em;
     line-height: 1.05em;
 }
@@ -20,7 +16,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     line-height: 1.25em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
 }
 
 p {
@@ -45,11 +41,24 @@ header {
     background-image: url("../images/pagetexture.jpg");
     border-radius: 10px;
     width: 80%;
-    height: 80vh;
+    height: 90vh;
+}
+
+.question {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .button {
+    border-radius: 10px;
     padding: 1em;
+    font-size: 1.5em;
+}
+
+.button:hover {
+    color: whitesmoke;
+    background: rgba(119,136,153,0.7);
+    user-select: none;
 }
 
 #choice-list {
@@ -58,4 +67,12 @@ header {
 
 #question-results-area img {
     height: 200px;
+}
+
+#timer {
+    font-size: 2.25em;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
